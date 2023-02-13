@@ -333,7 +333,7 @@ justify-content:space-evenly;
 
 }
 
-@media screen and (min-width: 400px ?? max-width: 660px) {
+@media screen and (min-width: 400px) and (max-width: 660px) {
 
 .direction-l .desc,
 .direction-r .desc {
@@ -417,10 +417,7 @@ justify-content:space-evenly;
   margin-bottom: -80px !important;
 }
 .homeimg{
-  margin-top: -104px;
-
-  
-  
+  margin-top: -104px; 
 }
 @media (max-width: 900px) {
  .homeimg{
@@ -487,7 +484,8 @@ details[open] summary ~ * {
   margin:100px auto 100px;
   display:grid;
   grid-template-columns:repeat(auto-fit, minmax(350px, 1fr));
-  grid-gap:20px;
+  grid-gap:30px;
+  /* margin: 2%; */
 }
 .testimonial .card{
   position:relative;

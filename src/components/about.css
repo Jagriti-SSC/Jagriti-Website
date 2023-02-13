@@ -1,16 +1,48 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
 .react1{
-	background-color: radial-gradient(#e80909, transparent);
-	background-color: #F2E0D2 ;
-    /* margin-top: 10px; */
+	/* margin: 0;
+	padding: 0; */
+	box-sizing: border-box;
+}
+.videoPlay{
+	position: absolute;
+	object-fit: cover;
+	filter: blur(1px);
+	height: 100vh;
+    width: 100vw;
+	z-index: 3;
+	margin-left: -1%;
+	margin-top: -1.5%;
+}
+.jagriti-text{
+	position: absolute;
+	margin-top: 18%;
+	z-index: 5;
+	height: auto;
+	color: rgb(0, 0, 0);
+	font-family: 'Poppins', sans-serif;
 }
 .lead{
 	margin-left: 20%;
 	margin-right: 20%;
 	margin-bottom: 5%;
+	color: rgb(255, 255, 255);
+	font-size: 20px;
+	font-family: 'Montserrat', sans-serif;
 }
+
 .hey{
-	margin-top: 10%;
-	margin-bottom: 3%;
-	
+	/* margin-top: 2%; */
+	margin-bottom: 3.5%;
+	font-size: 3.2rem;
 }
+.react{
+	/* height: 50%; */
+	position: relative;
+	margin-top: 110vh;
+	color: black;
+}
+.cover{
+	position: relative;
+}
+

@@ -20,7 +20,7 @@ function Events(props) {
 
     {/* main logic */}
     <div className="events">
-        <a className="competitions" >
+        <a href="/" className="competitions">
           Competitions
         </a>
         <a className="guest" href="/guesttalk">

@@ -6,7 +6,7 @@ const Clock = ({timerDays,timerHours,timerMinutes,timerSeconds}) => {
       <div className='my-5 date'>
           <h3 className='text'>MARK THE DATE</h3>
           <br />
-          <p className='jagriti'>Jagriti will go live on 16 April 2022.</p>
+          <p className='jagriti'>Jagriti will go live on 7 April 2023.</p>
       </div>
       <section className="timer-container">
           <section className="timer">
