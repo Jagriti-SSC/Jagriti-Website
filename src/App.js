@@ -7,6 +7,7 @@ import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import EventsPage from "./pages/EventsPage";
 import TeamPage from "./pages/TeamPage";
+import ContactUsPage from "./pages/ContactUsPage";
 import { useFirebase } from "./context/Firebase";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
           <Route exact path="/about" element={<AboutPage />} />
           <Route exact path="/events" element={<EventsPage />} />
           <Route exact path="/team" element={<TeamPage />} />
+          <Route exact path="/contactus" element={<ContactUsPage/>} />
         </Routes>
         <Footer />
       </BrowserRouter>

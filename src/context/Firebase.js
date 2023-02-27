@@ -28,11 +28,6 @@ export const useFirebase = () => {
 export const FirebaseProvider = (props) => {
 
     // Create the required function for using the internal functions of the utility imported
-    
-
-
- 
-
   return (
     <FirebaseContext.Provider
       value={
