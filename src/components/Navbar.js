@@ -4,12 +4,12 @@ import { Outlet, Link } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div>
+    <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            {" "}
-            <img src={require("../Assets/logo.png")} />
+            {/* <img src={require("../Assets/logo.png")} /> */}
+            <img src="https://www.jagritissc.org/static/media/logo.7d7c0e0ba4298a24ed9b3fb458609d4f.svg"></img>
           </Link>
 
           <button
@@ -23,9 +23,9 @@ function Navbar() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav ms-auto  mb-lg-0  ">
-            <li className="nav-item ">
+          <div className="collapse navbar-collapse" id="navbarSupportedContent" data-toggle="collapse" data-target=".navbar-collapse">
+            <ul className="navbar-nav ms-auto mb-lg-0  ">
+              <li className="nav-item ">
                 <Link className="nav-link" to="/">
                   Home
                 </Link>
@@ -45,16 +45,17 @@ function Navbar() {
                   Our Team
                 </Link>
               </li>
-              {/* <li className="nav-item d-flex">
-                <a className="nav-link" href="/Contact">Contact</a>
-              </li> */}
+              <li className="nav-item d-flex">
+                <Link className="nav-link" to="/contactUs">
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
       </nav>
-
       <Outlet />
-    </div>
+    </>
   );
 }
 

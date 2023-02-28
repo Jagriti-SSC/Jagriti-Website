@@ -2,7 +2,6 @@ body {
   margin: 0;
   padding: 0;
   background: rgb(230,230,230);
-  
   color: rgb(50,50,50);
   font-family: 'Open Sans', sans-serif;
   font-size: 112.5%;
@@ -417,24 +416,28 @@ justify-content:space-evenly;
   margin-bottom: -80px !important;
 }
 .homeimg{
-  margin-top: -104px;
-
-  
-  
+  height: 600px;
+  width: 700px;
 }
+
+.hero-heading{
+  position: relative;
+  bottom: 60px;
+}
+.paras{
+  position: relative;
+  bottom: 50px;
+}
+
 @media (max-width: 900px) {
  .homeimg{
     width: 100vw;
-    margin-top: 2px;
+    margin-top: -190px;
  }
 }
 .ing{
   margin-bottom: -80px !important;
 }
-
-/* new
- */
-
 
  .content {
   width: 80%;
@@ -499,16 +502,7 @@ details[open] summary ~ * {
   box-shadow:0 10px 40px rgba(0,0,0,.5);
   overflow:hidden;
 }
-/* .testimonial .card .layer{
-  position:absolute;
-  top:calc(100% - 2px);
-  left:0;
-  height:100%;
-  width:100%;
-  background:linear-gradient(#03a9f4, #e91ee3);
-  z-index:1;
-  transition:0.5s;
-} */
+
 .testimonial .card:hover .layer{
   top:0;
 }
