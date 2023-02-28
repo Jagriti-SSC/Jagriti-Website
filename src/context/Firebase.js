@@ -27,8 +27,6 @@ export const useFirebase = () => {
 export const FirebaseProvider = (props) => {
   // Create the required function for using the internal functions of the utility imported
 
-//  HEAD
-    // Create the required function for using the internal functions of the utility imported
   const addDocument = async (dbType, data) => {
     try {
       await addDoc(collection(db, dbType), data);
@@ -39,7 +37,6 @@ export const FirebaseProvider = (props) => {
     }
   };
 
-//  6a1d24b59bc5647e4fab7eadddc0ccc0b7b0edec
   return (
     <FirebaseContext.Provider
       value={{
