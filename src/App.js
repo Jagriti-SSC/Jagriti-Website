@@ -9,10 +9,23 @@ import EventsPage from "./pages/EventsPage";
 import TeamPage from "./pages/TeamPage";
 import ContactUsPage from "./pages/ContactUsPage";
 import { useFirebase } from "./context/Firebase";
+import { useState, useEffect } from "react";
+import Preloader from "./components/preloader/Preloader";
+import ScrollProgressbar from "./components/scrollIndicator/ScrollProgressbar";
 
 const App = () => {
   const firebase = useFirebase();
- 
+
+  // Preloader
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
+  }, []);
+
   return (
     <div>
       <BrowserRouter>
@@ -22,7 +35,7 @@ const App = () => {
           <Route exact path="/about" element={<AboutPage />} />
           <Route exact path="/events" element={<EventsPage />} />
           <Route exact path="/team" element={<TeamPage />} />
-          <Route exact path="/contactus" element={<ContactUsPage/>} />
+          <Route exact path="/contactUs" element={<ContactUsPage />} />
         </Routes>
         <Footer />
       </BrowserRouter>

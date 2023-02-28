@@ -1,0 +1,10 @@
+.scrollbar{
+    position:fixed;
+    height: 7px;
+    width: 100%;
+    left: 0;
+    top: 0;
+   z-index: 2000;
+   background-color: #967a2a;
+   
+}
